@@ -28,12 +28,3 @@ nav a {
   /*text-decoration: none;*/
   font-size: 1.1em;
   padding: 5px; }
-
-.highlight {
-  border: 1px solid;
-  border-color: #263333;
-  padding: 10px;
-  overflow-x: scroll;
-}
-
-
