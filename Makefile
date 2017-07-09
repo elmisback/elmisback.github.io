@@ -1,7 +1,7 @@
 MD = markdown
-ORDER = -
+ORDER = header.html - footer.html
 .SUFFIXES: .html .md
-.PHONY: html git
+.PHONY: html git clean
 
 .md.html:
 	${MD} < $< | cat ${ORDER} > $@
@@ -10,6 +10,10 @@ all: html
 
 html:
 	ls -1 *.md | sed 's/.md$$/.html/' | xargs make
+
+clean:
+	rm index.html
+	rm links.html
 
 deploy:
 	git add -A
