@@ -1,0 +1,30 @@
+body {
+  margin: auto;
+  line-height: 1.4;
+  max-width: 750px;
+  padding: 10px 10px;
+}
+
+a {
+  color: #da5151
+}
+
+#footnotediv div{
+  font-size: 90%;
+  text-align: justify;
+  background-color: beige;
+  padding: 0px 12px;
+  max-width: 600px;
+  border:1px solid #CDBBB5;
+  /*margin: 20px*/
+}
+
+/* Don't modify line height for superscripts */
+sup, sub {
+  vertical-align: baseline;
+  position: relative;
+  top: -0.4em;
+}
+sub {
+  top: 0.4em;
+}
