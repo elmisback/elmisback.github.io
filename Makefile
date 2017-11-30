@@ -1,15 +1,15 @@
-MD = pandoc --ascii --smart
-ORDER = header.html announcements.html - footer.html
+PANDOC=pandoc --ascii --smart
 .SUFFIXES: .html .md
 .PHONY: html deploy clean
 
 all: html
 
 announcements.html: announcements.md announcements-footer.html
-	${MD} $< | cat - announcements-footer.html > $@
+	${PANDOC} $< | cat - announcements-footer.html > $@
 
 %.html: %.md header.html announcements.html footer.html
-	${MD} < $< | cat ${ORDER} > $@
+	${PANDOC} $< -c /blog.css -B header.html -B announcements.html \
+	  -A footer.html -o $@
 
 html:
 	find . -name "*.md" | sed 's/.md$$/.html/' | xargs make

@@ -1,0 +1,8 @@
+<head>
+  <title>$title$</title>
+  <link rel="stylesheet" type="text/css" href="/blog.css"></link>
+</head>
+<body>
+  <pre><a style="color: black" href="/">index</a> <a style="color: black" href="/links.html">links</a></pre>
+  <main>
+  <hr>

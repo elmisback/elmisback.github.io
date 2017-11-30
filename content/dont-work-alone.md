@@ -1,6 +1,6 @@
-% Don't Work Alone
-% Edward Misback
-% 11/29/2017
+%Don't Work Alone
+%Edward Misback
+%11/29/2017
 
 For 8 months, I searched by myself for what to do with my life. It was very
 hard and it didn't amount to much.
