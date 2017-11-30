@@ -8,6 +8,7 @@ var Footnotes = {
 
         footnotelinks.bind('mouseover',Footnotes.footnoteover);
         footnotelinks.bind('mouseout',Footnotes.footnoteoout);
+        jQuery('.footnotes').addClass('hide');
     },
     footnoteover: function() {
         clearTimeout(Footnotes.footnotetimeout);
@@ -22,8 +23,13 @@ var Footnotes = {
         div.bind('mouseover',Footnotes.divover);
         div.bind('mouseout',Footnotes.footnoteoout);
 
+        var text = jQuery(document.createElement('div'));
+        text.attr('id', 'footnotetext');
+
         var el = document.getElementById(id);
-        div.html('<div>'+jQuery(el).html()+'</div>');
+        text.html('<div>'+jQuery(el).html()+'</div>');
+
+        div.append(text)
 
         jQuery(document.body).append(div);
 
@@ -44,7 +50,7 @@ var Footnotes = {
         Footnotes.footnotetimeout = setTimeout(function() {
             jQuery('#footnotediv').animate({
                 opacity: 0
-            }, 600, function() {
+            }, 0, function() {
                 jQuery('#footnotediv').remove();
             });
         },100);

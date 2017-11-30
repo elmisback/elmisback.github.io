@@ -2,21 +2,24 @@ body {
   margin: auto;
   line-height: 1.4;
   max-width: 750px;
-  padding: 10px 10px;
+  padding: 10px 10px 100px 10px;
 }
 
 a {
   color: #da5151
 }
 
-#footnotediv div{
+#footnotetext div{
   font-size: 90%;
-  text-align: justify;
+  /*text-align: justify;*/
   background-color: beige;
   padding: 0px 12px;
   max-width: 600px;
   border:1px solid #CDBBB5;
-  /*margin: 20px*/
+}
+
+#footnotediv div{
+  margin: 0px 20px 0px 0px;
 }
 
 /* Don't modify line height for superscripts */
@@ -27,4 +30,11 @@ sup, sub {
 }
 sub {
   top: 0.4em;
+}
+
+/* Hiding footnotes. */
+.hide{display:none;}
+
+@media print{
+  .hide{display:block;}
 }
