@@ -1,3 +1,5 @@
+%links
+
 * Richard Hamming's [You and Your Research](http://www.cs.virginia.edu/~robins/YouAndYourResearch.html)
 * Ralph Waldo Emerson's [Self-Reliance](https://en.wikisource.org/wiki/Essays:_First_Series/Self-Reliance)
 * Randy Pausch's [Time Management Lecture](http://www.cs.virginia.edu/robins/Randy_Time_Management_UVa_2007.html)
